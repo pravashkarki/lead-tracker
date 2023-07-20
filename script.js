@@ -11,11 +11,9 @@ if (leadsFromLocalStorage) {
     render(myLeads)
 }
 
-
 function render(leads) {
     let listItems = ""
     for (let i = 0; i < leads.length; i++) {
-        // listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>"
         listItems += `
             <li> 
                 <a href='${leads[i]}' target='_blank'>
@@ -30,7 +28,6 @@ function render(leads) {
 deleteBtn.addEventListener("dblclick", function () {
     localStorage.clear()
     myLeads = []
-    ulEl.innerHTML = ""
 })
 
 inputBtn.addEventListener("click", function () {

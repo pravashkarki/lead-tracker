@@ -20,10 +20,15 @@ input {
 button {
     background: #5f9341;
     padding: 10px 20px;
-    border: 0;
+    border: 1px solid #5f9341;
     color: #fff;
     cursor: pointer;
 }
+#delete-btn {
+    background: #ffffff;
+    color: #5f9341;
+}
+
 
 ul {
     margin-top: 20px;
